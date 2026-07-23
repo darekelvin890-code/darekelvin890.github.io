@@ -149,10 +149,115 @@ section h2 {
 
 /* ----- About ----- */
 .about-content p {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto 1rem;
   font-size: 1.1rem;
   color: #b0bac9;
+}
+
+/* ----- Experience ----- */
+#experience {
+  scroll-margin-top: 4rem;
+}
+
+.experience-card {
+  background: #111827;
+  border: 1px solid #1e2a3a;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: border-color 0.2s;
+}
+
+.experience-card:hover {
+  border-color: #58a6ff;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-header h3 {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.exp-company {
+  color: #58a6ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.exp-tag {
+  background: #1e3a2a;
+  color: #4ade80;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid #2d5a3f;
+}
+
+.exp-description {
+  color: #b0bac9;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.exp-mission {
+  background: #0f1923;
+  border-left: 3px solid #58a6ff;
+  padding: 0.75rem 1rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1rem;
+  color: #b0bac9;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.exp-mission i {
+  color: #58a6ff;
+}
+
+.exp-details {
+  color: #8b95a5;
+  margin-top: 0.5rem;
+}
+
+.exp-details summary {
+  cursor: pointer;
+  color: #58a6ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.exp-details summary:hover {
+  color: #79b8ff;
+}
+
+.exp-details p {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #0a0e1a;
+  border-radius: 6px;
+  color: #b0bac9;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.exp-details .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 /* ----- Skills ----- */
@@ -245,6 +350,7 @@ section h2 {
   gap: 1.5rem;
   justify-content: center;
   font-size: 1.8rem;
+  flex-wrap: wrap;
 }
 
 .social-links a {
@@ -255,6 +361,24 @@ section h2 {
 .social-links a:hover {
   color: #58a6ff;
   transform: translateY(-3px);
+}
+
+.contact-phone {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.contact-phone i {
+  color: #58a6ff;
+}
+
+.contact-phone a {
+  color: #b0bac9;
+  transition: color 0.2s;
+}
+
+.contact-phone a:hover {
+  color: #58a6ff;
 }
 
 /* ----- Footer ----- */
@@ -282,4 +406,9 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
-}
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  }
